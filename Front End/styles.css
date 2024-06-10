@@ -1,0 +1,104 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    display: flex;
+    flex-direction: column;
+    height: 100vh;
+    background-color: #f4f4f4;
+    margin: 0;
+}
+
+.header-container {
+    width: 100%;
+    background-color: #4CAF50;
+    color: white;
+    text-align: center;
+    padding: 20px 0;
+}
+
+.content-container {
+    display: flex;
+    flex: 1;
+    width: 80%;
+    max-width: 1200px;
+    margin: 50px auto; /* Leave space at the top and bottom */
+}
+
+.file-container, .result-container {
+    flex: 1;
+    padding: 20px;
+    background: white;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    border-radius: 5px;
+    margin: 10px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.file-container {
+    border-right: 1px solid #ddd;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    max-width: 400px;
+    align-items: center; /* Center form elements */
+}
+
+label {
+    margin-bottom: 10px;
+    font-weight: bold;
+    font-size: 1.1em; /* Increase font size for better visibility */
+}
+
+input[type="file"] {
+    display: none; /* Hide the default file input */
+}
+
+.custom-file-upload {
+    display: inline-block;
+    padding: 10px 20px;
+    cursor: pointer;
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    font-size: 1em;
+    transition: background-color 0.3s ease; /* Add transition for smooth hover effect */
+    text-align: center;
+}
+
+.custom-file-upload:hover {
+    background-color: #45a049;
+}
+
+input[type="button"] {
+    padding: 10px 20px;
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 1em;
+    transition: background-color 0.3s ease; /* Add transition for smooth hover effect */
+    margin-top: 20px; /* Add space between the file input and the button */
+}
+
+input[type="button"]:hover {
+    background-color: #45a049;
+}
+
+.result-container h3 {
+    font-size: 1.2em;
+    color: #333;
+    text-align: center;
+}

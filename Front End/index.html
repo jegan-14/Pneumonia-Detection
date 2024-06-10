@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+    <title>Pneumonia Detection</title>
+</head>
+<body>
+    <div class="header-container">
+        <h1>Pneumonia Detection System</h1>
+    </div>
+    <div class="content-container">
+        <div class="file-container">
+            <form>
+                <label for="img_data">Kindly select your image</label>
+                <label class="custom-file-upload">
+                    <input type="file" accept="image/*" id="fileInput" name="img_data" onchange="updateText()">
+                    Choose File
+                </label>
+                <div id="selectedImageText" style="margin-top: 10px;"></div>
+                <input type="button" value="Classify" id="btn">
+            </form>
+        </div>
+        <div class="result-container">
+            <h3 id="result">
+                No image selected.
+            </h3>
+        </div>
+    </div>
+    
+    <script src="script.js"></script>
+</body>
+</html>
